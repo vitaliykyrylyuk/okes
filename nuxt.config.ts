@@ -1,12 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss"],
+  css: ['~/assets/css/main.css'],
 
-  tailwindcss: {
-    cssPath: '~/assets/css/tailwind.css',
-    configPath: 'tw.config',
-    viewer: true
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
 
+  modules: [
+    'nuxt-icon',
+    '@nuxtjs/google-fonts'
+  ],
+
+  googleFonts: {
+    families: {
+      Inter: [300, 400, 600]
+    },
+    display: 'swap',
+    prefetch: false,
+    preconnect: false,
+    preload: false,
+    download: true,
+    base64: false
+  },
 })

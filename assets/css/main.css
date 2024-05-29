@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-weight: 300;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  src:
+    url('assets/fonts/GothamPro-Light.woff') format('woff2'),
+    url('assets/fonts/GothamPro-Light.woff2') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  src:
+    url('assets/fonts/GothamPro.woff') format('woff2'),
+    url('assets/fonts/GothamPro.woff2') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  src:
+    url('assets/fonts/GothamPro-Medium.woff') format('woff2'),
+    url('assets/fonts/GothamPro-Medium.woff2') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  src:
+    url('assets/fonts/GothamPro-Bold.woff') format('woff2'),
+    url('assets/fonts/GothamPro-Bold.woff2') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: 'Gotham Pro';
+  font-style: normal;
+  src:
+    url('assets/fonts/GothamPro-Black.woff') format('woff2'),
+    url('assets/fonts/GothamPro-Black.woff2') format('woff');
+  font-display: swap;
+}
+
+body {
+  font-family: 'Gotham Pro', sans-serif;
+}
